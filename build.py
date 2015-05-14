@@ -16,6 +16,8 @@ outputpath          = 'IPA/'
 xcodebuildclean     = 'xcodebuild clean'
 # release版本 需要调整对证书 否则打包时需要设置签名和证书
 xcodebuildrelease   = 'xcodebuild -sdk iphoneos -configuration Release'
+# debug版本
+xcodebuilddebug     = 'xcodebuild -sdk iphonesimulator8.3 -configuration Debug'
 
 # 替换文件
 def replaceflies(channel):
